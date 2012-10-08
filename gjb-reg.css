@@ -1,0 +1,37 @@
+.gjb_errors
+{
+	background-color:#ffaeae;
+	color:#000;
+	padding:15px;
+	margin:5px auto;
+	display:none;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;			
+}
+
+table.gjb_table td, table.gjb_table th, table.gjb_table tr {
+	background: white;
+	border: 0px solid #ccc;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+}
+
+tt.gjb_err
+{
+	font-size:12px;
+}
+
+div.gjb_costdiv
+{
+	float:right;
+	text-align:right;
+	width:120px;
+}
+
+select.gjb_dniselect
+{
+	border:0px solid;
+	background:white;
+	margin: 0px;
+	padding: 0px;
+}
