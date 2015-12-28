@@ -68,7 +68,8 @@ function gjb_install()
 	NIF varchar(255) NOT NULL,
 	Email varchar(255) NOT NULL,
 	Edat int(11) DEFAULT 0 NOT NULL,
-	Sexe tinyint(1) DEFAULT 1 NOT NULL COMMENT '0 mujer 1 hombre',
+	Sexe tinyint(1) DEFAULT 2 NOT NULL COMMENT '0 mujer 1 hombre 2 ns/nc',
+	Camiseta tinyint(1) DEFAULT 3 NOT NULL COMMENT '0 XS, 1 S, 2 M, 3 L, 4 XL, 5 XXL',
 	Comarca varchar(255) DEFAULT '' NOT NULL,
 	Coneguts int(11) DEFAULT 0 NOT NULL,
 	TipusPC varchar(255) DEFAULT '' NOT NULL,
@@ -145,7 +146,7 @@ function gjb_obteFormulari( $year, $closed, $limit)
 	{
 		$num_users = gjb_getUserRegistred($year);
 		if ($limit != 0 && $limit <= $num_users)
-			return "Lo siento, ya no quedan plazas libres.";
+			return $lang['ERR_NO_PLACES'];
 		return gjb_obteFormulariRegistre($year);
 	}
 
