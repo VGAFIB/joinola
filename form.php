@@ -257,6 +257,7 @@ function gjb_registrarUsuari($year)
 	gjb_ParsePost('gjb_email', 'Email', $values);
 	gjb_ParsePost('gjb_edat', 'Edat', $values);
 	gjb_ParsePost('gjb_sexe', 'Sexe', $values);
+	gjb_ParsePost('gjb_tshirt', 'Camiseta', $values)
 	gjb_ParsePost('gjb_comarca', 'Comarca', $values);
 	gjb_ParsePost('gjb_coneguts', 'Coneguts', $values);
 	gjb_ParsePost('gjb_t_pc', 'TipusPC', $values);
@@ -376,6 +377,20 @@ lang['ERR_NO_RULES']        = \"".html_entity_decode($lang['ERR_NO_RULES'],ENT_C
 				<select name='gjb_sexe' id='gjb_sexe'>
 					<option value = '1'>{$lang['REG_GENDER_MALE']}</option>
 					<option value = '0'>{$lang['REG_GENDER_FEMALE']}</option>
+					<option value = '2'>{$lang['REG_GENDER_UNDEFINED']}</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label for='gjb_tshirt'>{$lang['REG_TSHIRT_SIZE']}:</label></td>
+			<td>
+				<select name='gjb_tshirt' id='gjb_tshirt'>
+					<option value = '0'>XS</option>
+					<option value = '1'>S</option>
+					<option value = '2'>M</option>
+					<option value = '3'>L</option>
+					<option value = '4'>XL</option>
+					<option value = '5'>XXL</option>
 				</select>
 			</td>
 		</tr>
