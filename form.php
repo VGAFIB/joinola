@@ -257,7 +257,7 @@ function gjb_registrarUsuari($year)
 	gjb_ParsePost('gjb_email', 'Email', $values);
 	gjb_ParsePost('gjb_edat', 'Edat', $values);
 	gjb_ParsePost('gjb_sexe', 'Sexe', $values);
-	gjb_ParsePost('gjb_tshirt', 'Camiseta', $values)
+	gjb_ParsePost('gjb_tshirt', 'Camiseta', $values);
 	gjb_ParsePost('gjb_comarca', 'Comarca', $values);
 	gjb_ParsePost('gjb_coneguts', 'Coneguts', $values);
 	gjb_ParsePost('gjb_t_pc', 'TipusPC', $values);
